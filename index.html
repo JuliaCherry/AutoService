@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мастерский Ремонт - Быстро. Качественно. Доступно.</title>
+
+    <style>
+      :root {
+        --main-bg-color: #222;
+        --second-bg-color: #f0f4f4;
+        --main-color: #ffffff;
+        --second-color: #d10014;
+        --action-color: #d0d0d0;
+      }
+    </style>
+
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <img
+          class="header__logo"
+          src="img/logo.svg"
+          alt="Логотип компании AutoService"
+        />
+        <button class="button hader__button">Выбрать специалиста</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h2 class="hero__title">
+            <span class="hero__title-up">Мастерский</span>
+            <span class="hero__title-down">Ремонт</span>
+          </h2>
+
+          <p class="hero__year">
+            <time datetime="2018">с 2018 года</time>
+          </p>
+          <p class="hero__tagline">Быстро. Качественно. Доступно.</p>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2 class="about__title">Почему<span class="black-text">мы</span></h2>
+          <p class="about__text">
+            С момента основания нашей автомастерской мы уделяем особое внимание
+            каждой детали и работаем с любыми марками автомобилей.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="contact__title">
+            <span class="black-text">Заполните форму и мы </span>свяжемся с вами
+          </h2>
+
+          <form class="contact__form form">
+            <fieldset class="form__fieldst">
+              <legend class="form__title">Выберите нужное направление</legend>
+
+              <label class="form__item radio">
+                <input class="radio__input" type="radio" name="type" />Кузовной
+                ремонт
+              </label>
+
+              <label class="form__item radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="type"
+                />Диагностика и ремонт двигателей
+              </label>
+
+              <label class="form__item radio">
+                <input class="radio__input" type="radio" name="type" />Электрика
+                и электроника
+              </label>
+
+              <label class="form__item radio">
+                <input class="radio__input" type="radio" name="type" />Тормозные
+                системы и ходовая часть
+              </label>
+
+              <label class="form__item radio">
+                <input class="radio__input" type="radio" name="type" />Сварочные
+                работы
+              </label>
+
+              <label class="form__item radio">
+                <input class="radio__input" type="radio" name="type" />Ремонт и
+                обслуживание системы кондиционирования
+              </label>
+
+              <label class="form__item radio">
+                <input class="radio__input" type="radio" name="type" />Замена
+                масел и техническое обслуживание
+              </label>
+
+              <label class="form__item radio">
+                <input class="radio__input" type="radio" name="type" />Ремонт
+                трансмиссии и коробки передач
+              </label>
+
+              <label class="form__item radio">
+                <input
+                  class="radio__input"
+                  type="radio"
+                  name="type"
+                />Шиномонтаж и балансировка
+              </label>
+            </fieldset>
+
+            <fieldset class="form__fieldst">
+              <legend class="form__title">Выберите дату и время</legend>
+              <div class="form__months">
+                <button class="from__btn-month">Февраль</button>
+                <button class="from__btn-month">Март</button>
+                <button class="from__btn-month">Апрель</button>
+              </div>
+
+              <div>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="day" />1
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="day" />2
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="day" />3
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="day" />4
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="day" />5
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="day" />6
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="day" />7
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="day" />8
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="day" />9
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="day" />10
+                </label>
+              </div>
+
+              <div>
+                <p>Доступное время:</p>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="time" />10:00
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="time" />14:00
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="time" />15:00
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="time" />17:00
+                </label>
+                <label class="form__item radio">
+                  <input class="radio__input" type="radio" name="time" />20:00
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset class="form__fieldst">
+              <legend class="form__title">Заполните поля</legend>
+
+              <input type="text" name="name" placeholder="Имя" />
+              <input type="text" name="phone" placeholder="Телефон" />
+              <input
+                type="text"
+                name="car"
+                placeholder="Модель и марка автомобиля"
+              />
+              <input type="text" name="year" placeholder="Год выпуска" />
+
+              <p class="form__info-type">Диагностика и ремонт двигателей</p>
+              <p class="form__info-date">
+                <time datetime="2024">03.02 14:00</time>
+                <time datetime="2024">14:00</time>
+              </p>
+            </fieldset>
+
+            <div class="form__btn-wrapper">
+              <button class="form__button button">Назад</button>
+              <button class="form__button button">Далее</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <img
+          class="footer__logo"
+          src="img/logo.svg"
+          alt="Логотип компании AutoService"
+        />
+        <p class="footer__copyright">© AutoService, 2024</p>
+        <ul class="footer__developers">
+          <li>Designer: Anastasia Ilina</li>
+          <li>Developer: Yuliya Alexandrova</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
