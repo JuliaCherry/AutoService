@@ -6,23 +6,45 @@
 .header__container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .header__logo {
   width: 254px;
-  height: 40px;
 }
 
-.header__button {
-  width: 210px;
-  height: 46px;
-  background-color: var(--second-bg-color);
-  border-radius: 50px;
+.header__link:hover {
+  background-color: #e4f0f0;
+}
+
+.header__link:focus-visible {
+  border-color: var(--second-color);
 }
 
 .header__link {
-  text-align: center;
+  background-color: var(--second-bg-color);
+  border-radius: 50px;
+  border: 1px solid transparent;
   font-size: 16px;
   font-weight: 500;
   line-height: 140%;
+  padding: 12px 20px;
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding-top: 24px;
+  }
+
+  .header__logo {
+    width: 180px;
+  }
+}
+
+@media (max-width: 660px) {
+  .header {
+    padding: 16px 0 24px;
+  }
 }
